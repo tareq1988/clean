@@ -1,0 +1,227 @@
+/*--------------------------------------------------------------
+  Layout
+--------------------------------------------------------------*/
+
+#page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-area {
+    float: left;
+    margin: 0 -29% 0 0;
+    width: 100%;
+}
+.site-main {
+    margin: 0 29% 0 0;
+}
+.site-content .widget-area {
+    float: right;
+    overflow: hidden;
+    width: 25%;
+}
+.site-footer {
+    clear: both;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+
+.sticky {
+    display: block;
+    background: #f9f9f9;
+    padding: 15px;
+}
+
+// Asides
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+    display: none;
+}
+
+.hentry {
+    margin: 0 0 3em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3em;
+    clear: both;
+    display: block;
+
+    .entry-thumbnail {
+
+    }
+
+    .entry-header {
+
+        h1.entry-title,
+        h2.entry-title {
+            display: block;
+            margin: 0;
+            font-size: 2.5rem;
+            line-height: 1.2;
+            word-wrap: break-word;
+            font-weight: normal;
+            padding: 0 0 20px;
+            color: #000;
+        }
+    }
+
+    .entry-meta {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        font-size: 0.8125rem;
+        line-height: 1.5;
+        font-style: italic;
+
+        a {
+            font-weight: bold;
+            font-style: normal;
+        }
+    }
+
+    .entry-content {
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+
+        h1 {
+            // font-size: 21px;
+            font-size: 2.5rem;
+            line-height: 1.5;
+        }
+
+        h2 {
+            // font-size: 18px;
+            font-size: 2.2rem;
+            line-height: 1.6;
+        }
+
+        h3 {
+            // font-size: 16px;
+            font-size: 2rem;
+            line-height: 1.846153846;
+        }
+
+        h4 {
+            // font-size: 14px;
+            font-size: 1.5rem;
+            line-height: 1.846153846;
+        }
+
+        h5 {
+            // font-size: 21px;
+            font-size: 2.5rem;
+        }
+
+        h6 {
+            font-size: 21px;
+            font-size: 2.5rem;
+        }
+    }
+
+    .entry-footer {
+        padding-top: 10px;
+        font-size: 13px;
+        font-size: 0.8125rem;
+        font-style: italic;
+
+        a {
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .cat-links {
+            a {
+                // font-weight: bold;
+            }
+        }
+
+        .comments-link {
+            float: right;
+        }
+    }
+}
+
+.sep {
+    color: #ccc;
+    padding: 0 5px;
+}
+
+.byline,
+.updated:not(.published) {
+    display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+    display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+    margin: 1.5em 0 0;
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+header.page-header {
+    border-bottom: 1px solid #f5f5f5;
+    margin-bottom: 20px;
+
+    h1.page-title {
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .taxonomy-description {
+        font-style: italic;
+    }
+}
+
+.entry-content table,
+.comment-content table {
+    border-bottom: 1px solid #ededed;
+    color: #757575;
+    font-size: 12px;
+    font-size: 0.857142857rem;
+    line-height: 2;
+    margin: 0 0 24px;
+    margin: 0 0 1.714285714rem;
+    width: 100%;
+
+    caption {
+        font-size: 16px;
+        font-size: 1.142857143rem;
+        margin: 24px 0;
+        margin: 1.714285714rem 0;
+    }
+
+    td {
+        border-top: 1px solid #ededed;
+        padding: 6px 10px 6px 0;
+    }
+}
+
+/*--------------------------------------------------------------
+  Footer
+--------------------------------------------------------------*/
+.site-footer {
+    border-top: 1px solid #eee;
+    padding: 30px 0;
+    margin-top: 30px;
+    font-size: .8rem;
+    text-align: center;
+
+    a {
+        font-weight: bold;
+    }
+}

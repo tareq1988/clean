@@ -1,0 +1,109 @@
+/*--------------------------------------------------------------
+  Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+    display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+/*--------------------------------------------------------------
+  Social Custom Menu
+--------------------------------------------------------------*/
+// #footer-social-nav {
+//     padding: 0 0 23px;
+// }
+// #menu-social,
+// #footer-social-nav ul {
+//     display: inline-block;
+//     overflow: hidden;
+//     margin: 0;
+//     padding: 0;
+// }
+// #menu-social li,
+// #footer-social-nav ul li {
+//     display: inline-block;
+//     margin: 0;
+//     padding: 0 3px 10px;
+//     list-style: none;
+// }
+// #menu-social li a,
+// #footer-social-nav ul li a {
+//     display: block;
+//     padding: 0;
+//     margin: 0;
+//     line-height: 1;
+//     text-align: center;
+//     overflow: hidden;
+// }
+// #menu-social li a  {
+//     width: 30px;
+//     height: 30px;
+//     font-size: 16px;
+//     font-size: 1rem;
+//     color: #fff;
+// }
+
+
+.social-menu {
+    ul {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+
+        a::before {
+            font-size: 18px;
+            vertical-align: top;
+            text-align: center;
+            -moz-transition: color .1s ease-in 0;
+            -webkit-transition: color .1s ease-in 0;
+            display: inline-block;
+            font-family: "Genericons";
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            line-height: 1;
+            text-decoration: inherit;
+            text-transform: none;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            speak: none;
+        }
+
+        a[href*="codepen.io"]::before      {content: '\f216';}
+        a[href*="digg.com"]::before        {content: '\f221';}
+        a[href*="dropbox.com"]::before     {content: '\f225';}
+        a[href*="facebook.com"]::before    {content: '\f204';}
+        a[href*="flickr.com"]::before    {content: '\f211';}
+        a[href*="plus.google.com"]::before {content: '\f218';}
+        a[href*="github.com"]::before      {content: '\f200';}
+        a[href*="instagram.com"]::before   {content: '\f215';}
+        a[href*="linkedin.com"]::before    {content: '\f208';}
+        a[href*="pinterest.com"]::before  {content: '\f210';}
+        a[href*="path.com"]::before      {content: '\f219';}
+        a[href*="dribbble.com"]::before    {content: '\f201';}
+        a[href*="polldaddy.com"]::before   {content: '\f217';}
+        a[href*="getpocket.com"]::before   {content: '\f224';}
+        a[href*="reddit.com"]::before      {content: '\f222';}
+        a[href*="skype.com"]::before, a[href*="skype:"]::before {content: '\f220';}
+        a[href*="stumbleupon.com"]::before {content: '\f223';}
+        a[href*="tumblr.com"]::before     {content: '\f214';}
+        a[href*="twitter.com"]::before      {content: '\f202';}
+        a[href*="vimeo.com"]::before       {content: '\f212';}
+        a[href*="youtube.com"]::before       {content: '\f213';}
+        a[href*="wordpress.org"]::before, a[href*="wordpress.com"]::before {content: '\f205';}
+        a[href*="feed"]::before          {content: '\f413';}
+        a[href*="mailto"]::before    {content: '\f410';}
+
+    }
+}
+

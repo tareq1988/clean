@@ -1,0 +1,207 @@
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+a {
+    color: @linkColor;
+    text-decoration: none;
+}
+
+a:visited {
+    color: @linkColor;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: @linkColor;
+}
+
+/*--------------------------------------------------------------
+  Header
+--------------------------------------------------------------*/
+.site-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+
+    .site-branding {
+        margin-bottom: 30px;
+
+        .site-title {
+            font-size: 2em;
+        }
+
+        .site-description {
+            font-size: .9em;
+            color: #777;
+            margin-top: 10px;
+        }
+    }
+
+    .main-navigation {
+        clear: both;
+        display: block;
+        float: left;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+.main-navigation {
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        text-align: left;
+        position: relative;
+        display: inline-block;
+
+        ul {
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            float: left;
+            position: absolute;
+            top: 2.5em;
+            left: -999em;
+            z-index: 99999;
+            background: #fff;
+            border-top: 1px solid #f5f5f5;
+
+            a {
+                width: 200px;
+            }
+
+            li {
+                padding: 10px 10px 10px 15px;
+
+                &:hover {
+                    background: #f5f5f5;
+                }
+            }
+
+            ul {
+                left: -999em;
+                top: 0;
+            }
+        }
+    }
+
+    li {
+        float: left;
+        position: relative;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    ul.nav-menu > li {
+        padding: 0 0 15px 0;
+        margin: 0 15px 0 10px;
+        list-style-type: disc;
+
+        &:first-child {
+            list-style: none;
+        }
+
+        > a {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        &::after {
+            // content: " . ";
+            // font-size: 30px;
+            // font-weight: bold;
+            // position: absolute;
+            // top: -18px;
+            // right: -25px;
+        }
+
+        > ul:before {
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            border-color: rgba(194, 225, 245, 0);
+            border-bottom-color: #f5f5f5;
+            border-width: 10px;
+            margin-left: 10px;
+            position: absolute;
+            top: -20px;
+            left: 0;
+        }
+    }
+
+    li:hover > a {
+
+    }
+
+    ul ul :hover > a {
+
+    }
+
+    ul ul a:hover {
+
+    }
+
+    ul li:hover > ul {
+        left: 0;
+    }
+
+    ul ul li:hover > ul {
+        left: 100%;
+    }
+
+    .current_page_item > a,
+    .current-menu-item > a,
+    .current_page_ancestor > a {
+
+    }
+}
+
+
+/* Small menu */
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggle,
+    .main-navigation.toggled .nav-menu {
+        display: block;
+    }
+
+    .main-navigation ul {
+        display: none;
+    }
+}
+
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: left;
+    width: 50%;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
